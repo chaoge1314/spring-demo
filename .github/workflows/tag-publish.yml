@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: 项目打包
+name: 打标签
 
 # Controls when the workflow will run
 on:
