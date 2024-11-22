@@ -33,7 +33,7 @@ jobs:
           distribution: 'temurin'
 
       # 3. 构建项目
-      - name: 构建项目
+      - name: 打包
         run: mvn clean package -DskipTests  # Maven 构建（跳过测试）
 
       # Runs a single command using the runners shell
