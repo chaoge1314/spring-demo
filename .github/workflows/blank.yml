@@ -51,6 +51,8 @@ jobs:
           echo test, and deploy your project.
   manual_tag:
       runs-on: ubuntu-latest
+      permissions:
+        contents: write  # 添加写权限
       steps:
       # 1. 检出代码
       - name: Checkout code
