@@ -25,6 +25,17 @@ jobs:
       - name: 代码检出
         uses: actions/checkout@v4
 
+      # 2. 设置 Java 环境
+      - name: 设置JAVA环境
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'  # Java 版本
+          distribution: 'temurin'
+
+      # 3. 构建项目
+      - name: 构建项目
+        run: mvn clean package -DskipTests  # Maven 构建（跳过测试）
+
       # Runs a single command using the runners shell
       - name: 运行单行测试脚本
         run: echo Hello, world!
