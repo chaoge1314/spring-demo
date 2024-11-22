@@ -36,7 +36,6 @@ jobs:
           java-version: '22'  # Java 版本
           distribution: 'temurin'
           cache: 'maven'
-          cache-dependency-path: 'pom.xml' # optional
       # 3. 构建项目
       - name: 打包
         run: mvn clean package -DskipTests  # Maven 构建（跳过测试）
