@@ -47,9 +47,7 @@ jobs:
         with:
           tag_name: ${{ env.new_tag }} 
           release_name: Release ${{ github.new_tag  }}
-          body: |
-            ### Changelog
-            - ${{ env.commit_message }}
+          body: ${{ env.commit_message }}
           draft: false
           prerelease: false
         env:
